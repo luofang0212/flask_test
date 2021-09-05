@@ -24,7 +24,7 @@ def down_pag_url():
         "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
         "sec-ch-ua-platform": "macOS"
     }
-    for x in range(100, 101):
+    for x in range(101, 110):
         url = '''
         https://search.51job.com/list/010000%252c020000%252c030200%252c040000%252c180200,000000,0000,00,9,99,python,2,{0}.html?lang=c&postchannel=0000&workyear=99&cotype=99&degreefrom=99&jobterm=99&companysize=99&ord_field=0&dibiaoid=0&line=&welfare=
         '''.format(x)
@@ -197,9 +197,9 @@ def get_detail_url():
 
 
 def start():
-    # down_pag_url()
+    down_pag_url()
     # down_detail_url()
-    get_detail_url()
+    # get_detail_url()
 
 
 

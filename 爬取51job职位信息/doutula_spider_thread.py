@@ -76,7 +76,7 @@ class Consumer(threading.Thread):
 
     def run(self):
         while True:
-            if self.page_queue.empty() and self.page_queue.empty():
+            if self.page_queue.empty() and self.img_queue.empty():
                 break
             img_url,filename = self.img_queue.get()
             # print(img_url,filename)
